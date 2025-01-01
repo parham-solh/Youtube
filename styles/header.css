@@ -3,94 +3,84 @@
   height: 50px;
   flex-direction: row;
   justify-content: space-between;
+  padding: 5px 22px;
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
 }
 .rigth-section {
-  background-color: rgba(0, 132, 255, 0.315);
   width: 150px;
   display: flex;
   align-items: center;
+  flex-shrink: 0;
+}
+.menu-btn {
+  padding-top: 10px;
+  height: 35px;
+  width: 35px;
+  border-radius: 40px;
+  cursor: pointer;
 }
 .menu-icon {
-  height: 20px !important;
-  width: 30px !important;
-  margin-left: 13px;
+  height: 25px !important;
+  width: 35px !important;
 }
-
-/* test commit */
 .youtube-logo {
   height: 20px !important;
+  margin-left: 18px;
+  cursor: pointer;
 }
 .middle-section {
-  /* background-color: gray; */
   flex: 1;
   display: flex;
-  max-width: 500px;
+  max-width: 700px;
   align-items: center;
 }
 /* plus */
 
-.cointainer{
+.cointainer {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-color: rgb(163, 3, 3);
+  margin-left: 50px;
 }
-.search-bar{
-  color: rgb(128, 0, 0);
+.search-bar {
   flex: 1;
   display: flex;
-  border: solid 1px rgb(184, 183, 183);
+  border: solid 1px rgb(197, 197, 197);
   align-items: center;
   border-radius: 60px;
-  padding: 1px 10px;
+  padding: 0px 8px;
   box-shadow: inset 0px 0px 2px rgb(160, 160, 160);
+  width: 25z0px;
 }
-.search-bar input{
+.search-bar input {
   background: transparent;
   flex: 1;
   border: 0;
   outline: none;
   padding: 10px;
-  font-size:15px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
   color: rgba(27, 27, 27, 0.836);
 }
-.serch-icon{
-  padding: 8px; 
-  border:none;
+.serch-icon {
+  padding: 8px;
+  border: none;
   border-radius: 50px;
   margin-right: 10px;
-}
-
- /* {
-  width: 35px !important;
-  background-color: rgba(255, 255, 255, 0);
-} */
-/* .search-bar {
-  font-size: 15px;
-  padding-left: 10px;
-  margin-left: 20px;
-  height: 30px;
-  border: solid 1px rgba(153, 153, 153, 0.411);
-  box-shadow: inset 1px 2px 4px rgba(100, 100, 100, 0.233);
-  flex: 1;
-} */
-/* .search-bar::placeholder {
-  color: rgb(160, 160, 160);
-} */
-/* .search-btn {
-  /* height: 33px;
-  width: 50px;
-  border: solid 1px rgba(138, 138, 138, 0.411);
-  background-color: rgba(126, 126, 126, 0.096);
-  margin: -1px;
   cursor: pointer;
-} */  
+  flex-shrink: 0;
+}
 .mic-icon {
-  height: 40px;
-  width: 40px;
+  height: 43px;
+  width: 43px;
   border: none;
-  border-radius: 20px;
+  border-radius: 25px;
   margin-left: 10px;
   margin-right: 10px;
   cursor: pointer;
@@ -99,24 +89,76 @@
   width: 200px;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: space-between;
+  flex-shrink: 0;
 }
 .plus-btn {
-  height: 37px;
-  width: 100px;
-  background-color: rgba(192, 192, 192, 0.671);
+  height: 33px;
+  width: 99px;
+  background-color: rgb(241, 241, 241);
   display: flex;
   border-radius: 20px;
   align-items: center;
+  padding-top: 5px;
+  cursor: pointer;
 }
 .plus-icon {
-  margin-left: 5px;
+  margin-left: 13px;
+  padding-bottom: 2.5px;
 }
 .create {
+  font-size: 14px;
+  font-weight: 410;
   margin-left: 5px;
-  margin-right: 20px;
   margin-bottom: 4px;
 }
-
-
-
+.bell-btn {
+  height: 35px;
+  width: 35px;
+  margin-right: 17px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+.notification-icon {
+  position: absolute;
+  background-color: rgba(233, 14, 14, 0.774);
+  color: white;
+  padding: 2px 5px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-family: Roboto, Arial;
+  top: -5px;
+  right: -7px;
+}
+.chaneel-icon {
+  height: 33px;
+  width: 33px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.serch-icon , .notification-container , .mic-icon{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.notification-container:hover .tooltips, .serch-icon:hover .tooltips , .mic-icon:hover .tooltips {
+  opacity: 1;
+}
+.tooltips {
+position: absolute;
+bottom: -50px;
+background-color: rgb(134, 134, 134);
+color: white;
+padding: 9px 7px;
+border-radius: 6px;
+font-size: 12px;
+font-family: roboto, arial;
+opacity: 0;
+transition: opacity 0.2s;
+pointer-events: none;
+white-space: nowrap;
+}
