@@ -60,12 +60,12 @@
 }
 
 
-@media (max-width : 650px){
+@media (max-width : 800px){
   .video-grid{
     grid-template-columns: 1fr ;
   }
 }
-@media (min-width : 651px) and (max-width : 1200px){
+@media (min-width : 801px) and (max-width : 1200px){
   .video-grid{
     grid-template-columns: 1fr 1fr;
   }

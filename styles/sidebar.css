@@ -1,51 +1,76 @@
 .sidebar-container {
-  background-color: rgb(255, 255, 255);
   position: fixed;
   top: 60px;
   left: 0;
   bottom: 0;
   width: 150px;
   align-items: center;
-  padding: 7px 25px;
+  padding: 7px 13px;
 }
-hr {
-  border-color: rgba(241, 241, 241, 0.281);
-  width: 200px;
-}
-.sidebar-links {
-  height: 36px;
+.sidebar-links-home {
+  padding: 8px 10px;
+  width: 180px;
   display: flex;
-  margin-bottom: 5px;
   align-items: center;
   cursor: pointer;
+  background-color: rgb(243, 243, 243);
+  border-radius: 10px;
+}
+.sidebar-links-home img {
+  width: 23px;
+}
+.sidebar-links-home div {
+  padding-left: 23px;
+  color: rgb(46, 46, 46);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.sidebar-links {
+  display: flex;
+  padding: 8px 10px;
+  align-items: center;
+  cursor: pointer;
+}
+.sidebar-links:hover,
+.you-icon:hover {
+  width: 180px;
+  background-color: rgba(243, 243, 243);
+  border-radius: 10px;
+}
+.sidebar-links-home:hover {
+  width: 180px;
+  background-color: rgba(221, 220, 220, 0.856);
+  border-radius: 10px;
 }
 .sidebar-links img {
   width: 24px;
 }
 .sidebar-links div {
   padding-left: 23px;
-  color: rgb(46, 46, 46);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
 .you-icon {
-  padding: 14px 0px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 500;
+  padding: 8px 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
   font-size: 16px;
   display: flex;
   color: rgb(27, 27, 27);
   cursor: pointer;
+  padding-left: 10px;
 }
 .you-icon img {
   padding-left: 5px;
 }
 .subscription-icon {
-  padding: 10px 0px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
   font-size: 16px;
   display: flex;
   color: rgb(0, 0, 0);
-  cursor: pointer;
+  padding-left: 10px;
 }

@@ -8,3 +8,8 @@ body {
   padding-left: 260px;
   padding-right: 30px;
 }
+hr {
+  border-color: rgba(241, 241, 241, 0.281);
+  width: 200px;
+  margin: 13px 0px;
+}
