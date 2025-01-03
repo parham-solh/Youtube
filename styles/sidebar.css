@@ -4,8 +4,10 @@
   left: 0;
   bottom: 0;
   width: 150px;
-  align-items: center;
+  align-items: left;
   padding: 7px 13px;
+  display: flex;
+  flex-direction: column;
 }
 .sidebar-links-home {
   padding: 8px 10px;
@@ -17,7 +19,7 @@
   border-radius: 10px;
 }
 .sidebar-links-home img {
-  width: 23px;
+  width: 23px; 
 }
 .sidebar-links-home div {
   padding-left: 23px;
@@ -26,12 +28,14 @@
   font-size: 14px;
   font-weight: bold;
 }
+
 .sidebar-links {
   display: flex;
   padding: 8px 10px;
   align-items: center;
   cursor: pointer;
 }
+
 .sidebar-links:hover,
 .you-icon:hover {
   width: 180px;
