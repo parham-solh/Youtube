@@ -7,7 +7,15 @@
 }
 .video-preview {
   cursor: pointer;
+  transition: background-color 0.3s;
 }
+
+.video-preview:hover
+{
+  background-color: rgb(220, 220, 220);
+  border-radius: 5px;
+}
+
 .thumbnail-row {
   margin-bottom: 12px;
   position: relative;
@@ -18,7 +26,7 @@
   transition: 0.2s;
 }
 .thumbnail:hover {
-  border-radius: 0px;
+  border-radius: 3px;
   width: 100.1%;
 }
 .video-time {
@@ -59,93 +67,102 @@
   border-radius: 20px;
 }
 
+/* 1fr */
 @media (max-width : 800px){
   .video-grid{
     grid-template-columns: 1fr ;
   }
-
   .sidebar-links .sidebar-text,
   .sidebar-links-home .sidebar-text
   {
     margin-top: 45px;
     margin-left: -55px;
   }
-
-  .sidebar-links:hover,
-  .you-icon:hover,
-  .sidebar-links-home:hover,
-  .sidebar-links-home
-  {
-    width: 100px;
-  }
-
+  .you-icon,
   .sidebar-links-home,
   .sidebar-links
   {
+    width: 100px;
     padding-top: 0px;
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 0px;
   }
-
   body
   {
     margin-left: -110px;
   }
-
   hr
   {
     width: 100px;
   }
-
-  
 }
+/* 1fr */
+
+/* 2fr */
 @media (min-width : 801px) and (max-width : 1200px){
   .video-grid{
     grid-template-columns: 1fr 1fr;
   }
-  
   .sidebar-links .sidebar-text,
   .sidebar-links-home .sidebar-text
   {
     margin-top: 45px;
     margin-left: -55px;
   }
-
-  .sidebar-links:hover,
+  /* .sidebar-links:hover,
   .you-icon:hover,
   .sidebar-links-home:hover,
   .sidebar-links-home
   {
     width: 100px;
-  }
+  } */
 
+  .you-icon,
   .sidebar-links-home,
   .sidebar-links
   {
+    width: 100px;
     padding-top: 0px;
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 0px;
   }
-
   body
   {
     margin-left: -110px;
   }
-
   hr
   {
     width: 100px;
   }
 }
+/* 2fr */
+
+/* 3fr */
 @media (min-width : 1201px) and (max-width : 1599px){
   .video-grid{
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .you-icon,
+  .sidebar-links-home,
+  .sidebar-links
+  {
+    width: 200px;
+  }
 }
+/* 3fr */
+
+/* 4fr */
 @media (min-width : 1600px){
   .video-grid{
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+  .you-icon,
+  .sidebar-links-home,
+  .sidebar-links
+  {
+    width: 200px;
+  }
 }
+/* 4fr */

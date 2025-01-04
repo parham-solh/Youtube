@@ -4,10 +4,7 @@
   left: 0;
   bottom: 0;
   width: 150px;
-  align-items: left;
   padding: 7px 13px;
-  display: flex;
-  flex-direction: column;
 }
 .sidebar-links-home {
   padding: 8px 10px;
@@ -17,6 +14,7 @@
   cursor: pointer;
   background-color: rgb(243, 243, 243);
   border-radius: 10px;
+  transition: background-color 0.5s;
 }
 .sidebar-links-home img {
   width: 23px; 
@@ -31,21 +29,20 @@
 
 .sidebar-links {
   display: flex;
+  border-radius: 10px;
   padding: 8px 10px;
   align-items: center;
   cursor: pointer;
+  transition: background-color 0.5s;
 }
 
 .sidebar-links:hover,
 .you-icon:hover {
-  width: 180px;
-  background-color: rgba(243, 243, 243);
-  border-radius: 10px;
-}
+  background-color: rgb(220, 220, 220);
+  }
+
 .sidebar-links-home:hover {
-  width: 180px;
-  background-color: rgba(221, 220, 220, 0.856);
-  border-radius: 10px;
+  background-color: rgb(220, 220, 220);
 }
 .sidebar-links img {
   width: 24px;
@@ -65,6 +62,8 @@
   color: rgb(27, 27, 27);
   cursor: pointer;
   padding-left: 10px;
+  border-radius: 10px;
+  transition: background-color 0.5s;
 }
 .you-icon img {
   padding-left: 5px;
