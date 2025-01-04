@@ -110,14 +110,6 @@
     margin-top: 45px;
     margin-left: -55px;
   }
-  /* .sidebar-links:hover,
-  .you-icon:hover,
-  .sidebar-links-home:hover,
-  .sidebar-links-home
-  {
-    width: 100px;
-  } */
-
   .you-icon,
   .sidebar-links-home,
   .sidebar-links
@@ -149,6 +141,7 @@
   .sidebar-links
   {
     width: 200px;
+    align-items: center;
   }
 }
 /* 3fr */

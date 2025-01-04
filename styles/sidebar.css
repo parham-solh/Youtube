@@ -14,7 +14,7 @@
   cursor: pointer;
   background-color: rgb(243, 243, 243);
   border-radius: 10px;
-  transition: background-color 0.5s;
+  transition: background-color 0.1s;
 }
 .sidebar-links-home img {
   width: 23px; 
@@ -33,7 +33,7 @@
   padding: 8px 10px;
   align-items: center;
   cursor: pointer;
-  transition: background-color 0.5s;
+  transition: background-color 0.1s;
 }
 
 .sidebar-links:hover,
@@ -63,7 +63,6 @@
   cursor: pointer;
   padding-left: 10px;
   border-radius: 10px;
-  transition: background-color 0.5s;
 }
 .you-icon img {
   padding-left: 5px;
