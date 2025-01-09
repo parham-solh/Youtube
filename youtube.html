@@ -16,7 +16,11 @@
     <link rel="stylesheet" href="styles/sidebar.css" />
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/video.css" />
-    <script src="https://kit.fontawesome.com/c745381312.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/topic-bar.css" />
+    <script
+      src="https://kit.fontawesome.com/c745381312.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -24,53 +28,153 @@
     <div class="header">
       <div class="rigth-section">
         <div class="menu-btn">
-          <img class="menu-icon" src="imgs/Icons/menu-icon.svg" >
+          <img class="menu-icon" src="imgs/Icons/menu-icon.svg" />
         </div>
         <div class="youtube-logo">
-          <img src="imgs/Icons/youtube-icon.svg">
-      </div>
+          <img src="imgs/Icons/youtube-icon.svg" />
+        </div>
       </div>
       <div class="middle-section">
         <div class="cointainer">
-        <form class="search-bar">
-          <input type="text" placeholder="Search" name="q">
-          <button type="submit" class="serch-icon"><img src="imgs/Icons/search-icon.svg" ><div class="tooltips">Search</div></button>
-        </form>
+          <form class="search-bar">
+            <input type="text" placeholder="Search" name="q" />
+            <button type="submit" class="serch-icon">
+              <img src="imgs/Icons/search-icon.svg" />
+              <div class="tooltips">Search</div>
+            </button>
+          </form>
         </div>
-        <button class="mic-icon"><i class="fa-solid fa-microphone"></i><div class="tooltips">Search with your vioce</div></button> 
+        <button class="mic-icon">
+          <i class="fa-solid fa-microphone"></i>
+          <div class="tooltips">Search with your vioce</div>
+        </button>
       </div>
       <div class="left-section">
         <div class="plus-btn">
-          <yt-icon class="plus-icon"style="width: 24px; height: 24px;"><!--css-build:shady--><!--css-build:shady--><span class="yt-icon-shape style-scope yt-icon yt-spec-icon-shape"><div style="width: 100%; height: 100%; display: block; fill: currentcolor;"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M20 12h-8v8h-1v-8H3v-1h8V3h1v8h8v1z"></path></svg></div></span></yt-icon>
+          <yt-icon class="plus-icon" style="width: 24px; height: 24px"
+            ><!--css-build:shady--><!--css-build:shady--><span
+              class="yt-icon-shape style-scope yt-icon yt-spec-icon-shape"
+              ><div
+                style="
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                  fill: currentcolor;
+                "
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  enable-background="new 0 0 24 24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  focusable="false"
+                  aria-hidden="true"
+                  style="
+                    pointer-events: none;
+                    display: inherit;
+                    width: 100%;
+                    height: 100%;
+                  "
+                >
+                  <path d="M20 12h-8v8h-1v-8H3v-1h8V3h1v8h8v1z"></path>
+                </svg></div></span
+          ></yt-icon>
           <p class="create">Create</p>
         </div>
         <button class="bell-btn">
           <div class="notification-container">
-            <img class="bell" src="imgs/Icons/brll-icon.svg">
+            <img class="bell" src="imgs/Icons/brll-icon.svg" />
             <div class="notification-icon">3</div>
             <div class="tooltips">Notifications</div>
           </div>
-          
         </button>
-        <img class="chaneel-icon" src="imgs/profiles/Untitled-1.psd6.png" alt="stylesheet" >
+        <img
+          class="chaneel-icon"
+          src="imgs/profiles/Untitled-1.psd6.png"
+          alt="stylesheet"
+        />
+      </div>
     </div>
+
+    <!-- topic-bar -->
+    <div class="topic-bar-container">
+      <button class="scroll-button left">&lt;</button>
+      <div class="topic-bar">
+        <div class="topic active">All</div>
+        <div class="topic">Music</div>
+        <div class="topic">Gaming</div>
+        <div class="topic">Movies</div>
+        <div class="topic">News</div>
+        <div class="topic">Sports</div>
+        <div class="topic">Technology</div>
+        <div class="topic">Fashion</div>
+        <div class="topic">Travel</div>
+        <div class="topic">Live</div>
+        <div class="topic">Comedy</div>
+        <div class="topic">Education</div>
+        <div class="topic">Podcasts</div>
+        <div class="topic">Fitness</div>
+        <div class="topic">Science</div>
+        <div class="topic">All</div>
+        <div class="topic">Music</div>
+        <div class="topic">Gaming</div>
+        <div class="topic">Movies</div>
+        <div class="topic">News</div>
+        <div class="topic">Sports</div>
+        <div class="topic">Technology</div>
+        -
+        <div class="topic">Fashion</div>
+        <div class="topic">Travel</div>
+        <div class="topic">Live</div>
+        <div class="topic">Comedy</div>
+        <div class="topic">Education</div>
+        <div class="topic">Podcasts</div>
+        <div class="topic">Fitness</div>
+        <div class="topic">Science</div>
+      </div>
+      <button class="scroll-button right">&gt;</button>
     </div>
 
     <!-- sidebar -->
-     <div class="sidebar-container">
-        <div class="sidebar-links-home"><img class="" src="imgs/Icons/home-icon.svg"><div class="sidebar-text">Home</div></div>
-        <div class="sidebar-links"><img class="" src="imgs/Icons/shorts-icon.svg"><div class="sidebar-text">Shorts</div></div>
-        <div class="sidebar-links"><img class="" src="imgs/Icons/subscription-icon.svg"><div class="sidebar-text">Subscriptions</div></div>
-        <hr>
-        <div class="you-icon">You<img src="imgs/Icons/send-icon.svg"></div>
-        <div class="sidebar-links"><img class="" src="imgs/Icons/history-icon.svg"><div class="sidebar-text">History</div></div>
-        <div class="sidebar-links"><img class="" src="imgs/Icons/playlists-icon.svg"><div class="sidebar-text">Playlists</div></div>
-        <div class="sidebar-links"><img class="" src="imgs/Icons/yourvideos-icon.svg"><div class="sidebar-text">Your videos</div></div>
-        <div class="sidebar-links"><img class="" src="imgs/Icons/watch-later-icon.svg"><div class="sidebar-text">Watch later</div></div>
-        <div class="sidebar-links"><img class="" src="imgs/Icons/liked-videos-icon.svg"><div class="sidebar-text">Liked videos</div></div>
-        <hr>
-        <div class="subscription-icon">Subscriptions</div>
-     </div>
+    <div class="sidebar-container">
+      <div class="sidebar-links-home">
+        <img class="" src="imgs/Icons/home-icon.svg" />
+        <div class="sidebar-text">Home</div>
+      </div>
+      <div class="sidebar-links">
+        <img class="" src="imgs/Icons/shorts-icon.svg" />
+        <div class="sidebar-text">Shorts</div>
+      </div>
+      <div class="sidebar-links">
+        <img class="" src="imgs/Icons/subscription-icon.svg" />
+        <div class="sidebar-text">Subscriptions</div>
+      </div>
+      <hr />
+      <div class="you-icon">You<img src="imgs/Icons/send-icon.svg" /></div>
+      <div class="sidebar-links">
+        <img class="" src="imgs/Icons/history-icon.svg" />
+        <div class="sidebar-text">History</div>
+      </div>
+      <div class="sidebar-links">
+        <img class="" src="imgs/Icons/playlists-icon.svg" />
+        <div class="sidebar-text">Playlists</div>
+      </div>
+      <div class="sidebar-links">
+        <img class="" src="imgs/Icons/yourvideos-icon.svg" />
+        <div class="sidebar-text">Your videos</div>
+      </div>
+      <div class="sidebar-links">
+        <img class="" src="imgs/Icons/watch-later-icon.svg" />
+        <div class="sidebar-text">Watch later</div>
+      </div>
+      <div class="sidebar-links">
+        <img class="" src="imgs/Icons/liked-videos-icon.svg" />
+        <div class="sidebar-text">Liked videos</div>
+      </div>
+      <hr />
+      <div class="subscription-icon">Subscriptions</div>
+    </div>
     <!-- sidebar -->
 
     <div class="video-grid">
