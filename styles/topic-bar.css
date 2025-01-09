@@ -1,77 +1,76 @@
 .topic-bar-container {
-    display: flex;
-    height: 80px;
-    align-items: center;
-    gap: 10px;
-    position: sticky;
-    top: 0;
-  }
-  
-  .topic-bar {
-    display: flex;
-    gap: 10px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    padding: 5px 0;
-    white-space: nowrap;
-    flex-grow: 1;
-  }
-  
-  .topic {
-    padding: 8px 15px;
-    background-color: #ffffff;
-    border-radius: 20px;
-    font-size: 14px;
-    color: #333;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, transform 0.2s;
-    flex-shrink: 0;
-  }
-  
-  .topic.active,
-  .topic:hover {
-    background-color: #0073e6;
-    color: #fff;
-    transform: scale(1.1);
-  }
-  
-  .scroll-button {
-    background-color: #0073e6;
-    border: none;
-    color: white;
-    font-size: 18px;
-    padding: 5px 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-  }
-  
-  .scroll-button:hover {
-    background-color: #005bb5;
-    transform: scale(1.1);
-  }
-  
-  .scroll-button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
-  
-  /* Scrollbar Styling */
-  .topic-bar::-webkit-scrollbar {
-    height: 6px;
-  }
-  
-  .topic-bar::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 10px;
-  }
-  
-  .topic-bar::-webkit-scrollbar-thumb:hover {
-    background: #aaa;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+}
+
+.topic-bar {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 5px 0;
+  white-space: nowrap;
+  flex-grow: 1;
+}
+
+.topic {
+  padding: 8px 10px;
+  background-color: #f0f0f0;
+  border-radius: 9px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  flex-shrink: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.topic.active,
+.topic:hover {
+  background-color: #000000;
+  color: #f1f1f1;
+}
+
+.scroll-button {
+  background-color: #ffffff00;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  padding: 5px 6px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.scroll-button:hover {
+  background-color: #ebebeb;
+}
+
+.scroll-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Scrollbar Styling */
+.topic-bar::-webkit-scrollbar {
+  height: 6px;
+}
+
+.topic-bar::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.topic-bar::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
     .topic {
       font-size: 12px;
       padding: 6px 12px;
@@ -80,4 +79,4 @@
     .scroll-button {
       display: none;
     }
-  }
+  } */
