@@ -2,10 +2,10 @@
   font-family: Roboto, Arial;
   font-weight: 500;
   display: flex;
-  height: 50px;
+  height: 80px; /* distance to navbar */
   align-items: center;
   position: fixed;
-  top: 60px;
+  top: 55px;
   z-index: 1;
   background-color: white;
   right: 0;
@@ -17,13 +17,14 @@
   gap: 10px; /* the gaps between topics */
   overflow-x: auto; /* scrolbar in horizontal axis */
   scroll-behavior: smooth; /* smooth the scrolbar */
-  padding: 6px 7px; /* 6px padding on the top and bottom. */
+  padding: 15px 7px; /* 6px padding on the top and bottom. */
 }
 
 .topic,
 .topic-active {
-  padding: 10px 20px;
-  border-radius: 5px;
+  font-size: 14px;
+  padding: 7px 13px;
+  border-radius: 9px;
   background-color: #e4e4e4fd;
   cursor: pointer;
   transition: transform 0.2s, background-color 0.2s;
