@@ -1,10 +1,14 @@
 .topic-bar-container {
   display: flex;
-  height: 80px;
+  height: 50px;
   align-items: center;
-  gap: 10px;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: 60px;
+  z-index: 1;
+  background-color: white;
+  right: 0;
+  left: 0;
+  margin-left: 250px;
 }
 
 .topic-bar {
@@ -13,27 +17,26 @@
   overflow-x: auto;
   scroll-behavior: smooth;
   padding: 5px 0;
-  white-space: nowrap;
-  flex-grow: 1;
 }
 
 .topic {
-  padding: 8px 10px;
-  background-color: #f0f0f0;
-  border-radius: 9px;
-  font-size: 14px;
-  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #ddd;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s, transform 0.2s;
-  flex-shrink: 0;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
 }
-
-.topic.active,
+.topic:focus,
 .topic:hover {
-  background-color: #000000;
-  color: #f1f1f1;
+  background-color: #007BFF;
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+.topic:active {
+  transform: scale(1.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .scroll-button {
