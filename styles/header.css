@@ -9,7 +9,7 @@
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1;
+  z-index: 100;
 }
 .rigth-section {
   width: 150px;
@@ -161,4 +161,5 @@ opacity: 0;
 transition: opacity 0.2s;
 pointer-events: none;
 white-space: nowrap;
+
 }

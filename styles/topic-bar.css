@@ -1,4 +1,6 @@
 .topic-bar-container {
+  font-family: Roboto, Arial;
+  font-weight: 500;
   display: flex;
   height: 50px;
   align-items: center;
@@ -7,36 +9,43 @@
   z-index: 1;
   background-color: white;
   right: 0;
-  left: 0;
-  margin-left: 250px;
+  left: 250px;
 }
 
 .topic-bar {
   display: flex;
-  gap: 10px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding: 5px 0;
+  gap: 10px; /* the gaps between topics */
+  overflow-x: auto; /* scrolbar in horizontal axis */
+  scroll-behavior: smooth; /* smooth the scrolbar */
+  padding: 6px 7px; /* 6px padding on the top and bottom. */
 }
 
-.topic {
+.topic,
+.topic-active {
   padding: 10px 20px;
   border-radius: 5px;
-  background-color: #ddd;
+  background-color: #e4e4e4fd;
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+  transition: transform 0.2s, background-color 0.2s;
 }
-.topic:focus,
+
+/* active is when button pressed */
+
 .topic:hover {
-  background-color: #007BFF;
-  color: white;
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #bfbfbf;
+  color: black;
+  transform: scale(1.05);
   outline: none;
 }
+
+.topic-active,
+.topic:focus{
+  background-color: black;
+  color: white;
+}
+
 .topic:active {
-  transform: scale(1.05);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
 }
 
 .scroll-button {
@@ -51,11 +60,6 @@
 
 .scroll-button:hover {
   background-color: #ebebeb;
-}
-
-.scroll-button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
 }
 
 /* Scrollbar Styling */
@@ -73,13 +77,13 @@
 }
 
 /* Responsive Design */
-/* @media (max-width: 768px) {
+@media (max-width: 1200px) {
+    .topic-bar-container
+    {
+      left: 150px;
+    }
     .topic {
-      font-size: 12px;
-      padding: 6px 12px;
+      font-size: 15px;
+      padding: 12px 12px;
     }
-  
-    .scroll-button {
-      display: none;
-    }
-  } */
+  }
