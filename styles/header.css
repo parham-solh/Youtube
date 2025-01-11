@@ -53,8 +53,8 @@
   border: solid 1px rgb(197, 197, 197);
   align-items: center;
   border-radius: 60px;
-  padding: 0px 8px;
-  box-shadow: inset 0px 0px 2px rgb(160, 160, 160);
+  padding: 0px 0px 0px 10px;
+  box-shadow: inset 0px 0px 1px rgb(160, 160, 160);
   width: 25z0px;
 }
 .search-bar input {
@@ -68,10 +68,10 @@
   color: rgba(27, 27, 27, 0.836);
 }
 .serch-icon {
-  padding: 8px;
-  border: none;
-  border-radius: 50px;
-  margin-right: 10px;
+  padding: 8px 20px;
+  border: 1px;
+  border-left: solid 1px rgb(197, 197, 197);
+  border-radius: 0px 20px 20px 0px;
   cursor: pointer;
   flex-shrink: 0;
   transition: background-color 0.1s;
