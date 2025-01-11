@@ -18,15 +18,14 @@
   flex-shrink: 0;
 }
 .menu-btn {
-  padding-top: 10px;
-  height: 35px;
-  width: 35px;
   border-radius: 40px;
-  cursor: pointer;
+  padding: 8px 8px;
+}
+.menu-btn:hover {
+  background-color: rgb(231, 231, 231);
 }
 .menu-icon {
-  height: 25px !important;
-  width: 35px !important;
+  display: flex;
 }
 .youtube-logo {
   height: 20px !important;
@@ -75,6 +74,10 @@
   margin-right: 10px;
   cursor: pointer;
   flex-shrink: 0;
+  transition: background-color 0.1s;
+}
+.serch-icon:hover {
+  background-color: rgb(231, 231, 231);
 }
 .mic-icon {
   height: 43px;
@@ -84,6 +87,10 @@
   margin-left: 10px;
   margin-right: 10px;
   cursor: pointer;
+  transition: background-color 0.1s;
+}
+.mic-icon:hover{
+  background-color: rgb(230, 229, 229);
 }
 .left-section {
   width: 200px;
@@ -101,6 +108,10 @@
   align-items: center;
   padding-top: 5px;
   cursor: pointer;
+  transition: background-color 0.1s;
+}
+.plus-btn:hover{
+  background-color: rgb(230, 230, 230);
 }
 .plus-icon {
   margin-left: 13px;
@@ -113,13 +124,15 @@
   margin-bottom: 4px;
 }
 .bell-btn {
-  height: 35px;
-  width: 35px;
+ padding: 7px 7px;
   margin-right: 17px;
   border-radius: 30px;
   border: none;
   background-color: rgba(255, 255, 255, 0);
   cursor: pointer;
+}
+.bell-btn:hover{
+  background-color: rgba(228, 228, 228, 0.774);
 }
 .notification-icon {
   position: absolute;
@@ -132,34 +145,38 @@
   top: -5px;
   right: -7px;
 }
+
 .chaneel-icon {
   height: 33px;
   width: 33px;
   border-radius: 30px;
   cursor: pointer;
 }
-.serch-icon , .notification-container , .mic-icon{
+.serch-icon,
+.notification-container,
+.mic-icon {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.notification-container:hover .tooltips, .serch-icon:hover .tooltips , .mic-icon:hover .tooltips {
+.bell-btn:hover .tooltips,
+.serch-icon:hover .tooltips,
+.mic-icon:hover .tooltips {
   opacity: 1;
 }
 .tooltips {
-position: absolute;
-bottom: -50px;
-background-color: rgb(134, 134, 134);
-color: white;
-padding: 9px 7px;
-border-radius: 6px;
-font-size: 12px;
-font-family: roboto, arial;
-opacity: 0;
-transition: opacity 0.2s;
-pointer-events: none;
-white-space: nowrap;
-
+  position: absolute;
+  bottom: -50px;
+  background-color: rgb(134, 134, 134);
+  color: white;
+  padding: 9px 7px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-family: roboto, arial;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+  white-space: nowrap;
 }

@@ -22,10 +22,12 @@
 
 .topic,
 .topic-active {
+  display: flex;
+  align-items: center;
   font-size: 14px;
   padding: 7px 13px;
   border-radius: 9px;
-  background-color: #e4e4e4fd;
+  background-color: #ececec;
   cursor: pointer;
   transition: transform 0.2s, background-color 0.2s;
 }
@@ -33,7 +35,7 @@
 /* active is when button pressed */
 
 .topic:hover {
-  background-color: #bfbfbf;
+  background-color: #d8d8d8;
   color: black;
   transform: scale(1.05);
   outline: none;
@@ -82,9 +84,5 @@
     .topic-bar-container
     {
       left: 150px;
-    }
-    .topic {
-      font-size: 15px;
-      padding: 12px 12px;
     }
   }
