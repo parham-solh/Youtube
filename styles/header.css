@@ -11,7 +11,7 @@
   left: 0;
   z-index: 100;
 }
-.rigth-section {
+.left-section {
   width: 150px;
   display: flex;
   align-items: center;
@@ -89,10 +89,10 @@
   cursor: pointer;
   transition: background-color 0.1s;
 }
-.mic-icon:hover{
+.mic-icon:hover {
   background-color: rgb(230, 229, 229);
 }
-.left-section {
+.rigth-section {
   width: 200px;
   display: flex;
   align-items: center;
@@ -110,7 +110,7 @@
   cursor: pointer;
   transition: background-color 0.1s;
 }
-.plus-btn:hover{
+.plus-btn:hover {
   background-color: rgb(230, 230, 230);
 }
 .plus-icon {
@@ -124,14 +124,14 @@
   margin-bottom: 4px;
 }
 .bell-btn {
- padding: 7px 7px;
+  padding: 7px 7px;
   margin-right: 17px;
   border-radius: 30px;
   border: none;
   background-color: rgba(255, 255, 255, 0);
   cursor: pointer;
 }
-.bell-btn:hover{
+.bell-btn:hover {
   background-color: rgba(228, 228, 228, 0.774);
 }
 .notification-icon {
