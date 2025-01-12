@@ -2,6 +2,14 @@ p {
   margin-top: 0px;
   font-family: Roboto, Arial;
 }
+
+h3,
+a,
+li
+{
+  font-family: Roboto, Arial;
+}
+
 body {
   margin: 0;
   padding-top: 150px;
