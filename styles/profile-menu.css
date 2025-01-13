@@ -24,10 +24,14 @@
     background-color: white;
     border-radius: 12px;
     width: 300px;
-    height: 730px;
+    max-height: 85vh;
     padding: 5px 0;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
     z-index: 1000;
+    box-sizing: border-box;
   }
   
   .profile-container:hover .profile-menu {
