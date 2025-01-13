@@ -18,9 +18,9 @@
   content: '';
   position: absolute;  
   left: 40px; 
-  width: 40px; /* Adjust as needed */ 
+  width: 40px;
   height: 70%; 
-  background: linear-gradient(to right, white, transparent); /* Adjust colors as needed */ 
+  background: linear-gradient(to right, rgb(255, 255, 255), transparent);
   pointer-events: none; 
 }
 
@@ -29,9 +29,9 @@
   content: '';
   position: absolute;  
   right: 40px; 
-  width: 40px; /* Adjust as needed */ 
+  width: 40px;
   height: 70%; 
-  background: linear-gradient(to left, white, transparent); /* Adjust colors as needed */ 
+  background: linear-gradient(to left, rgb(255, 255, 255), transparent);
   pointer-events: none; 
 }
 

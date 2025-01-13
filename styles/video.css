@@ -90,7 +90,6 @@
     left: 0 !important;
   }
 }
-
 /* 2fr */
 @media (min-width: 701px) and (max-width: 800px) {
   .video-grid {
