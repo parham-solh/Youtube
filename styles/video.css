@@ -172,7 +172,7 @@
   /* divv */
   .sidebar-container {
     padding: 0px 2px;
-    width: 60px;
+    width: 70px;
   }
 
   /* div */
@@ -226,22 +226,10 @@
   .video-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .sidebar-links-A,
-  .you-icon,
-  .sidebar-links-home,
-  .sidebar-links {
-    width: 150px;
-  }
 }
 /* 4fr */
 @media (min-width: 1601px) {
   .video-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-
-  .you-icon,
-  .sidebar-links-home,
-  .sidebar-links {
-    width: 150px;
   }
 }

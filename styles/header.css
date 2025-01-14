@@ -3,7 +3,7 @@
   height: 50px;
   flex-direction: row;
   justify-content: space-between;
-  padding: 5px 22px;
+  padding: 5px 16px;
   position: fixed;
   background-color: rgb(255, 255, 255);
   top: 0;
@@ -94,6 +94,7 @@
 }
 .rigth-section {
   width: 200px;
+  margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
