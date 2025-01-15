@@ -3,6 +3,11 @@ p {
   font-family: Roboto, Arial;
 }
 
+a {
+  text-decoration: none;
+  color: inherit; /* remove anchor blue color  */
+}
+
 h3,
 a,
 li
@@ -12,9 +17,7 @@ li
 
 body {
   margin: 0;
-  padding-top: 150px;
-  padding-left: 260px;
-  padding-right: 30px;
+  padding: 150px 30px 0px 260px; /* Top, Right, Bottom, Left */
 }
 hr {
   border-color: rgba(241, 241, 241, 0.281);

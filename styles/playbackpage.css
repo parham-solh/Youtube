@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: Roboto, Arial;
+    margin: 0px;
+    padding: 60px 100px 0px 100px;/* Top, Right, Bottom, Left */
+    box-sizing: border-box;
+}
+
+p 
+{
+    margin-top: 0px;
+    font-family: Roboto, Arial;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* Video Section */
+.video-section {
+    flex: 3;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.video-player iframe {
+    width: 1280px;
+    height: 720px;
+    border-radius: 12px;
+}
+
+.video-info h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.video-info .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.video-info .actions button {
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.channel-info {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.channel-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.channel-info h3 {
+    margin: 0;
+}
+
+.description {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Recommended Section */
+.recommended-section {  
+    margin: 0px 0px 0px 4px;/* Top, Right, Bottom, Left */
+    flex: 1;
+    border-radius: 8px;
+}
+
+.recommended-section h2 {
+    margin-top: 0;
+}
+
+.video-card {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.video-card img {
+    width: 167px;
+    height: 92px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.video-card h4 {
+    margin: 0;
+}
+
+.video-card span {
+    font-size: 12px;
+    color: gray;
+}
