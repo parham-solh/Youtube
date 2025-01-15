@@ -1,0 +1,117 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Sidebar styles */
+        .sidebar {
+            width: 240px;
+            background-color: #181818;
+            color: #fff;
+            padding: 16px;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        /* ul */
+        .subscription-list{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* li */
+        .subscription-item{
+            display: flex;
+            align-items: center;
+            padding: 8px 0;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+
+        .subscription-item img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+
+        .subscription-item span {
+            flex-grow: 1;
+        }
+
+        .subscription-item:hover
+        {
+            background-color: #383838;
+        }
+
+        .live-icon {
+            color: #ff0000;
+            font-size: 12px;
+            margin-left: 4px;
+        }
+
+        .notification-icon {
+            color: #0099ff;
+            font-size: 12px;
+            margin-left: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2 class="section-title">Subscriptions</h2>
+        <ul class="subscription-list">
+            <li class="subscription-item">
+                <img src="https://via.placeholder.com/40" alt="Channel Icon">
+                <span>Bloomberg Television <span class="live-icon">●</span></span>
+            </li>
+            <li class="subscription-item">
+                <img src="https://via.placeholder.com/40" alt="Channel Icon">
+                <span>Kalagar</span>
+            </li>
+            <li class="subscription-item">
+                <img src="https://via.placeholder.com/40" alt="Channel Icon">
+                <span>Jadi Mirmirani <span class="notification-icon">●</span></span>
+            </li>
+            <li class="subscription-item">
+                <img src="https://via.placeholder.com/40" alt="Channel Icon">
+                <span>SuperSimpleDev</span>
+            </li>
+            <li class="subscription-item">
+                <img src="https://via.placeholder.com/40" alt="Channel Icon">
+                <span>Sarvin Style Coding</span>
+            </li>
+            <li class="subscription-item">
+                <img src="https://via.placeholder.com/40" alt="Channel Icon">
+                <span>Arash Ardforoush</span>
+            </li>
+            <li class="subscription-item">
+                <img src="https://via.placeholder.com/40" alt="Channel Icon">
+                <span>Hasan Abbasi</span>
+            </li>
+        </ul>
+
+        <!-- <h2 class="section-title">Explore</h2>
+        <ul class="explore-list">
+            <li class="explore-item">Trending</li>
+            <li class="explore-item">Music</li>
+            <li class="explore-item">Gaming</li>
+            <li class="explore-item">News</li>
+        </ul> -->
+    </div>
+
+</body>
+
+</html>
