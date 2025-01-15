@@ -20,6 +20,7 @@
 .menu-btn {
   border-radius: 40px;
   padding: 8px 8px;
+  cursor: pointer;
 }
 .menu-btn:hover {
   background-color: rgb(231, 231, 231);
