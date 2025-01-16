@@ -7,11 +7,9 @@
 
 .video-preview {
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 .video-preview:hover {
-  background-color: rgb(220, 220, 220);
   border-radius: 5px;
 }
 
@@ -243,6 +241,6 @@
 /* 4fr */
 @media (min-width: 1601px) {
   .video-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
   }
 }

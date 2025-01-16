@@ -41,7 +41,7 @@
 }
 
 .subscription-item:hover {
-  background-color: rgb(226, 226, 226);
+  background-color: rgb(243, 243, 243);
 }
 
 .live-icon-r {
@@ -65,11 +65,11 @@
   font-family: "Roboto", "Arial", sans-serif;
   font-size: smaller;
   cursor: pointer;
-  border-radius: 11px;
+  border-radius: 10px;
 }
 .Show-more-icon img {
   margin-right: 25px;
 }
 .Show-more-icon:hover {
-  background-color: rgb(220, 220, 220);
+  background-color: rgb(243, 243, 243);
 }

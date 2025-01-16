@@ -49,11 +49,11 @@
 .sidebar-links-A:hover,
 .sidebar-links:hover,
 .you-icon:hover {
-  background-color: rgb(220, 220, 220);
+  background-color: rgb(243, 243, 243);
 }
 
 .sidebar-links-home:hover {
-  background-color: rgb(220, 220, 220);
+  background-color: rgb(235, 235, 235);
 }
 
 .sidebar-links-A div,
@@ -76,6 +76,10 @@
   border-radius: 10px;
   display: flex;
   align-items: center;
+}
+
+.you-icon img {
+  margin-left: 8px;
 }
 .hr-between{
   margin: 10px 0px;
