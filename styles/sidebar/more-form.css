@@ -1,0 +1,35 @@
+.more-form{
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    color: rgb(0, 0, 0);
+    padding: 6px 12px 6px;
+    margin: 0;
+}
+.more-form-link{
+    display: flex;
+    border-radius: 10px;
+    padding: 0px 10px;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.1s;
+    height: 40px;
+    width: 180px;
+    cursor: pointer;
+}
+.more-form-link div {
+    margin-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.more-form-link:hover{
+    background-color: rgb(220, 220, 220);
+}
+.about div{
+color: rgb(66, 66, 66);
+padding: 10px;
+font-family: "Roboto", "Arial", sans-serif;
+font-size: 13px;
+cursor: pointer;
+}

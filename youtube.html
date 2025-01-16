@@ -10,21 +10,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Noto+Nastaliq+Urdu:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
+    rel="stylesheet" /> 
   <!-- Link css -->
-  <link rel="stylesheet" href="styles/header.css" />
-  <link rel="stylesheet" href="styles/sidebar.css" />
+  <link rel="stylesheet" href="styles//header/navbar.css" />
+  <link rel="stylesheet" href="styles/sidebar/sidebar.css" />
   <link rel="stylesheet" href="styles/general.css" />
   <link rel="stylesheet" href="styles/video.css" />
-  <link rel="stylesheet" href="styles/topic-bar.css" />
-  <link rel="stylesheet" href="styles/profile-menu.css" />
-  <link rel="stylesheet" href="styles/subescriptions.css">
+  <link rel="stylesheet" href="styles/header/topic-bar.css" />
+  <link rel="stylesheet" href="styles/header/profile-menu.css" />
+  <link rel="stylesheet" href="styles/sidebar/subescriptions.css">
+  <link rel="stylesheet" href="styles/sidebar/Explore.css">
+  <link rel="stylesheet" href="styles/sidebar/more-form.css">
+  <!-- link Google -->
   <script src="https://kit.fontawesome.com/c745381312.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!-- header -->
-  <div class="header">
+   
+  <div class="navbar">
+    <!-- left -->
     <div class="left-section">
       <div class="menu-btn">
         <img class="menu-icon" src="imgs/Icons/menu-icon.svg" />
@@ -33,6 +38,7 @@
         <img src="imgs/Icons/youtube-icon.svg" />
       </div>
     </div>
+    <!-- middle -->
     <div class="middle-section">
       <form class="cointainer">
         <div class="search-bar">
@@ -42,13 +48,13 @@
             <div class="tooltips">Search</div>
           </button>
       </form>
-
     </div>
     <button class="mic-icon">
       <i class="fa-solid fa-microphone"></i>
       <div class="tooltips">Search with your vioce</div>
     </button>
   </div>
+  <!-- rigth -->
   <div class="rigth-section">
     <div class="plus-btn">
       <div class="plus-icon">
@@ -123,9 +129,8 @@
         </ul>
       </div>
     </div>
-
   </div>
-  </div>
+ </div>
 
   <!-- topic-bar -->
   <div class="topic-bar-container">
@@ -167,11 +172,11 @@
     </div>
     <button class="scroll-button right"><img src="imgs/Icons/scorll-button-right.svg"></button>
   </div>
-  <!-- topic-bar -->
 
   <!-- sidebar -->
-  <div class="sidebar-container">
-    <div class="sidebar-links-home">
+  <div class="sidebar-container" tabindex="0">
+    <div class="section-section">    
+      <div class="sidebar-links-home">
       <img class="sidebar-icon" src="imgs/Icons/home-icon.svg" />
       <div class="sidebar-text">Home</div>
     </div>
@@ -183,7 +188,9 @@
       <img class="sidebar-icon" src="imgs/Icons/subscription-icon.svg" />
       <div class="sidebar-text">Subscriptions</div>
     </div>
-    <hr />
+
+    <hr class="hr-between"/>
+
     <h2 class="you-icon">You<img src="imgs/Icons/send-icon.svg" /></h2>
     <div class="sidebar-links-A">
       <img class="sidebar-icon" src="imgs/Icons/history-icon.svg" />
@@ -205,43 +212,138 @@
       <img class="sidebar-icon" src="imgs/Icons/liked-videos-icon.svg" />
       <div class="sidebar-text">Liked videos</div>
     </div>
+  </div>
+
     <hr />
+
     <!-- subescriptions -->
+<div class="section-section">
     <h2 class="subscription-icon">Subscriptions</h2>
         <ul class="subscription-list">
             <li class="subscription-item">
                 <img src="imgs/profiles/car_profile.jpg" alt="Channel Icon">
-                <span>Bloomberg Television <span class="live-icon-r">●</span></span>
+                <span>HitMakers</span><span class="live-icon-r">●</span>
             </li>
             <li class="subscription-item">
-                <img src="https://via.placeholder.com/40" alt="Channel Icon">
-                <span>Kalagar</span>
+                <img src="imgs/profiles/billie_profile.jpg" alt="Channel Icon">
+                <span>BillieEilish</span>
             </li>
             <li class="subscription-item">
-                <img src="https://via.placeholder.com/40" alt="Channel Icon">
-                <span>Jadi Mirmirani <span class="live-icon-b">●</span></span>
+                <img src="imgs/profiles/channels3_profile.jpg" alt="Channel Icon">
+                <span>God Bless Bitcoin</span><span class="live-icon-b">●</span>
             </li>
             <li class="subscription-item">
-                <img src="https://via.placeholder.com/40" alt="Channel Icon">
-                <span>SuperSimpleDev</span>
+                <img src="imgs/profiles/channels4_profile.jpg" alt="Channel Icon">
+                <span>Rubik's</span>
             </li>
             <li class="subscription-item">
-                <img src="https://via.placeholder.com/40" alt="Channel Icon">
-                <span>Sarvin Style Coding</span>
+                <img src="imgs/profiles/channels5_profile.jpg" alt="Channel Icon">
+                <span>Catur Newbie</span>
             </li>
             <li class="subscription-item">
-                <img src="https://via.placeholder.com/40" alt="Channel Icon">
-                <span>Arash Ardforoush</span>
+                <img src="imgs/profiles/channels6_profile.jpg" alt="Channel Icon">
+                <span>Essential Classics</span><span class="live-icon-b">●</span>
             </li>
             <li class="subscription-item">
-                <img src="https://via.placeholder.com/40" alt="Channel Icon">
-                <span>Hasan Abbasi</span>
+                <img src="imgs/profiles/channels9_profile.jpg" alt="Channel Icon">
+                <span>James Bartholomew</span><span class="live-icon-b">●</span>
             </li>
+            <li class="subscription-item">
+              <img src="imgs/profiles/unnamed9.jpg" alt="Channel Icon">
+              <span>Top Gear</span>
+          </li>
         </ul>
+      <div class="Show-more-icon"> <img src="imgs/Icons/button-bottom.svg" alt=""> Show more</div>
     </div>
+    
+      <hr />
+
+      <!-- Explore -->
+       <div class="section-section">
+      <h2 class="Explore">Explore</h2>
+      <div class="Explore-links">
+        <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/trading-icon.svg" />
+        <div class="Explore-text">Trending</div>
+      </div>
+      <div class="Explore-links">
+        <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Musice.svg" />
+        <div class="Explore-text">Musice</div>
+      </div>
+      <div class="Explore-links">
+        <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/live.svg" />
+        <div class="Explore-text">Live</div>
+      </div>
+      <div class="Explore-links">
+        <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/gaming-icon.svg" />
+        <div class="Explore-text">Gaming</div>
+      </div>
+      <div class="Explore-links">
+        <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/news-icon.svg" />
+        <div class="Explore-text">News</div>
+      </div>
+      <div class="Explore-links">
+        <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/sports-icon.svg" />
+        <div class="Explore-text">Sports</div>
+      </div>
+      <div class="Explore-links">
+        <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/lreaning-icon.svg" />
+        <div class="Explore-text">Learning</div>
+      </div>
+      <div class="Explore-links">
+        <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/fashion-beauty.svg" />
+        <div class="Explore-text">Fashion & Beauty</div>
+      </div>
+    </div>
+
+      <hr />
+
+      <!-- More form youtube -->
+       <div class="section-section">
+      <h2 class="more-form">More form Youtube</h2>
+      <div class="more-form-link">
+        <img src="imgs/Icons/sidebar/more-form/youtube-studio.svg" />
+        <div>YouTbe Studio</div>
+      </div>
+      <div class="more-form-link">
+        <img src="imgs/Icons/sidebar/more-form/youtube-kids.svg" />
+        <div>YouTube Kids</div>
+      </div>
+    </div>
+
+      <hr />
+
+      <div class="section-section">
+      <div class="more-form-link">
+        <img src="imgs/Icons/sidebar/more-form/Settings.svg" />
+        <div>Settings</div>
+      </div>
+      <div class="more-form-link">
+        <img src="imgs/Icons/sidebar/more-form/Report-history.svg" />
+        <div>Report history</div>
+      </div>
+      <div class="more-form-link">
+        <img src="imgs/Icons/sidebar/more-form/help.svg" />
+        <div>Help</div>
+      </div>
+      <div class="more-form-link">
+        <img src="imgs/Icons/sidebar/more-form/Send-feedback.svg" />
+        <div>Send feedback</div>
+      </div>
+    </div>
+
+      <hr />
+
+      <div class="about">
+        <div>About Press Copyrigh tContact us Creators Advertise Developers</div>
+        <div>Terms Privacy Policy & Safety How YouTube worksTest new features</div>
+        <div >© 2025 Google LLC</div>
+      </div>
+
   </div>
+
   <!-- sidebar -->
 
+<!-- videos -->
   <div class="video-grid">
     <!-- video 01 -->
 
@@ -295,6 +397,7 @@
       </div>
     </a>
 
+    <!-- video 03 -->
 
     <!--video preview-->
     <a href="video.html">
@@ -325,6 +428,8 @@
       </div>
     </a>
 
+    <!-- video 04 -->
+
     <!--video preview-->
     <a href="video.html">
       <div class="video-preview">
@@ -354,6 +459,8 @@
         </div>
       </div>
     </a>
+    
+    <!-- video 05 -->
 
     <!--video preview-->
     <a href="video.html">
@@ -361,55 +468,61 @@
 
         <!--thumbnail-->
         <div class="thumbnail-row">
-          <img class="thumbnail" src="Imgs/thumbnails/billie.jpg">
-          <div class="video-time">12:34</div>
+          <img class="thumbnail" src="Imgs/thumbnails/hq7290.avif">
+          <div class="video-time">01:14:20</div>
         </div>
 
         <!--Video Info-->
         <div class="video-info-grid">
           <div class="channel-picture">
-            <img class="profile-picture" src="imgs/profiles/billie_profile.jpg">
+            <img class="profile-picture" src="Imgs/profiles/unnamed9.jpg">
           </div>
           <div class="video-info">
             <p class="video-title">
-              Billie Eilish - BIRDS OF A FEATHER (Official Music Video)
+              Ken Block Drifts London - EXTENDED Director's Cut | Top Gear | BBC
             </p>
             <p class="video-author">
-              BillieEilish
+              Top Gear
             </p>
             <p class="video-stats">
-              189M veiws &#183; 3 month ago
+              83M veiws &#183; 8 years ago
             </p>
           </div>
         </div>
       </div>
     </a>
+    
 
 
-    <!-- video 03 -->
+    <!-- video 06 -->
 
     <!--video preview-->
     <a href="video.html">
       <div class="video-preview">
         <!--thumbnail-->
         <div class="thumbnail-row">
-          <img class="thumbnail" src="imgs/thumbnails/hq723.avif" />
-          <div class="video-time">8:23</div>
+          <img class="thumbnail" src="imgs/thumbnails//097f3405526b10a2e39b3941dd0d4125.png" />
+          <div class="video-time">16:35</div>
         </div>
 
         <!--Video Info-->
         <div class="video-info-grid">
           <div class="channel-picture">
-            <img class="profile-picture" src="imgs/profiles/unnamed2.jpg" />
+            <img class="profile-picture" src="Imgs/profiles/Untitled-1.psd6.png" />
           </div>
           <div class="video-info">
-            <p class="video-title">$1 vs $10,000,000 Chess Sets!</p>
-            <p class="video-author">RookMoves Chess</p>
-            <p class="video-stats">1.5M views &#183; 1years ago</p>
+            <p class="video-title">
+              The best YouTubers in Iran | واقعا بهترین یوتوبر های ایرانن ,
+              نمیدونم؟
+            </p>
+            <p class="video-author">pico &#x2713;</p>
+            <p class="video-stats">100B views &#183; 1 day ago</p>
           </div>
         </div>
       </div>
     </a>
+    
+    <!-- video 07 -->
 
     <!--video preview-->
     <a href="video.html">
@@ -441,7 +554,7 @@
       </div>
     </a>
 
-    <!-- video 04 -->
+    <!-- video 08 -->
 
     <!--video preview-->
     <a href="video.html">
@@ -468,7 +581,7 @@
       </div>
     </a>
 
-    <!-- video 05 -->
+    <!-- video 09 -->
 
     <!--video preview-->
     <a href="video.html">
@@ -495,33 +608,33 @@
         </div>
       </div>
     </a>
-    <!-- video 06 -->
+
+    <!-- video 010 -->
 
     <!--video preview-->
     <a href="video.html">
       <div class="video-preview">
         <!--thumbnail-->
         <div class="thumbnail-row">
-          <img class="thumbnail" src="imgs/thumbnails//097f3405526b10a2e39b3941dd0d4125.png" />
-          <div class="video-time">16:35</div>
+          <img class="thumbnail" src="imgs/thumbnails/hq723.avif" />
+          <div class="video-time">8:23</div>
         </div>
 
         <!--Video Info-->
         <div class="video-info-grid">
           <div class="channel-picture">
-            <img class="profile-picture" src="Imgs/profiles/Untitled-1.psd6.png" />
+            <img class="profile-picture" src="imgs/profiles/unnamed2.jpg" />
           </div>
           <div class="video-info">
-            <p class="video-title">
-              The best YouTubers in Iran | واقعا بهترین یوتوبر های ایرانن ,
-              نمیدونم؟
-            </p>
-            <p class="video-author">pico &#x2713;</p>
-            <p class="video-stats">100B views &#183; 1 day ago</p>
+            <p class="video-title">$1 vs $10,000,000 Chess Sets!</p>
+            <p class="video-author">RookMoves Chess</p>
+            <p class="video-stats">1.5M views &#183; 1years ago</p>
           </div>
         </div>
       </div>
     </a>
+
+    <!-- video 011 -->
 
     <!--video preview-->
     <a href="video.html">
@@ -553,6 +666,8 @@
       </div>
     </a>
 
+    <!-- video 012 -->
+
     <!--video preview-->
     <a href="video.html">
       <div class="video-preview">
@@ -582,6 +697,8 @@
         </div>
       </div>
     </a>
+
+    <!-- video 013 -->
 
     <!--video preview-->
     <a href="video.html">
@@ -613,6 +730,8 @@
       </div>
     </a>
 
+    <!-- video 014 -->
+
     <!--video preview-->
     <a href="video.html">
       <div class="video-preview">
@@ -642,6 +761,8 @@
         </div>
       </div>
     </a>
+
+    <!-- video 015 -->
 
     <!--video preview-->
     <a href="video.html">
@@ -673,6 +794,8 @@
       </div>
     </a>
 
+    <!-- video 016 -->
+
     <!--video preview-->
     <a href="video.html">
       <div class="video-preview">
@@ -702,6 +825,8 @@
         </div>
       </div>
     </a>
+
+    <!-- video 017 -->
 
     <!--video preview-->
     <a href="video.html">
@@ -733,37 +858,39 @@
       </div>
     </a>
 
+    <!-- video 018 -->
+
     <!--video preview-->
     <a href="video.html">
       <div class="video-preview">
 
         <!--thumbnail-->
         <div class="thumbnail-row">
-          <img class="thumbnail" src="Imgs/thumbnails/yasin.jpg">
-          <div class="video-time">01:14:20</div>
+          <img class="thumbnail" src="Imgs/thumbnails/billie.jpg">
+          <div class="video-time">12:34</div>
         </div>
 
         <!--Video Info-->
         <div class="video-info-grid">
           <div class="channel-picture">
-            <img class="profile-picture" src="Imgs/profiles/yasin.jpg">
+            <img class="profile-picture" src="imgs/profiles/billie_profile.jpg">
           </div>
           <div class="video-info">
             <p class="video-title">
-              به راستی غلامرضا کیست؟ غلامرضا پلک نمیزنه دنیا رو روشن خاموش میکنه
+              Billie Eilish - BIRDS OF A FEATHER (Official Music Video)
             </p>
             <p class="video-author">
-              YasinInJuralisum
+              BillieEilish
             </p>
             <p class="video-stats">
-              1.9M veiws &#183; 6 months ago
+              189M veiws &#183; 3 month ago
             </p>
           </div>
         </div>
       </div>
     </a>
 
-    <!-- video 07 -->
+    <!-- video 019 -->
 
     <!--video preview-->
     <a href="video.html">
@@ -791,7 +918,7 @@
       </div>
     </a>
 
-    <!-- video 08 -->
+    <!-- video 020 -->
 
     <!--video preview-->
     <a href="video.html">
@@ -818,7 +945,7 @@
       </div>
     </a>
 
-    <!-- video 09 -->
+    <!-- video 021 -->
 
     <!--video preview-->
     <a href="video.html">
@@ -843,7 +970,7 @@
       </div>
     </a>
 
-    <!-- video 010 -->
+    <!-- video 022 -->
 
     <!--video preview-->
     <a href="video.html">
@@ -870,7 +997,7 @@
       </div>
     </a>
 
-    <!-- video 011 -->
+    <!-- video 023 -->
 
     <!--video preview-->
     <a href="video.html">
@@ -897,7 +1024,7 @@
       </div>
     </a>
 
-    <!-- video 012 -->
+    <!-- video 024 -->
 
     <!--video preview-->
     <a href="video.html">

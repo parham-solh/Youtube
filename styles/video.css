@@ -209,10 +209,23 @@
   .topic-bar-container {
     left: 90px !important;
   }
+
+  .Show-more-icon,
+  .Explore-text,
+  .Explore-icon,
+  .subscription-item,
+  .about,
+  .more-form-link,
+  .more-form,
+  .Explore-links,
+  .Explore-icon,
+  .subscription-list,
+  .subscription-icon,
   .subscription-icon,
   .sidebar-links-A {
-    display: none;
+    opacity: 0;
   }
+
   body {
     padding-left: 110px;
   }

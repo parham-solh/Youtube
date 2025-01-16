@@ -3,12 +3,21 @@
   top: 60px;
   left: 0;
   bottom: 0;
-  width: 200px;
-  padding: 7px 13px;
+  width: 225px;
+  padding-right: 5px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.section-section{
+  padding: 12px;
+  width: 205px;
 }
 
 .sidebar-links-home {
-  padding: 8px 10px;
+  padding: 0px 10px;
+  height: 40px;
   width: 180px;
   display: flex;
   align-items: center;
@@ -19,7 +28,7 @@
 }
 
 .sidebar-links-home div {
-  padding-left: 23px;
+  margin-left: 25px;
   color: rgb(46, 46, 46);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -30,11 +39,12 @@
 .sidebar-links {
   display: flex;
   border-radius: 10px;
-  padding: 8px 10px;
+  padding: 0px 10px;
+  height: 40px;
+  width: 180px;
   align-items: center;
   cursor: pointer;
   transition: background-color 0.1s;
-  width: 180px;
 }
 .sidebar-links-A:hover,
 .sidebar-links:hover,
@@ -45,20 +55,17 @@
 .sidebar-links-home:hover {
   background-color: rgb(220, 220, 220);
 }
-.sidebar-links-home img,
-.sidebar-links-A img,
-.sidebar-links img {
-  width: 24px;
-}
 
 .sidebar-links-A div,
 .sidebar-links div {
-  padding-left: 23px;
+  margin-left: 25px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
 .you-icon {
-  padding: 9px 10px;
+  height: 40px;
+  width: 180px;
+  padding: 0px 10px;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -68,8 +75,19 @@
   margin: 0;
   border-radius: 10px;
   display: flex;
+  align-items: center;
 }
-.you-icon img {
-  flex: none;
-  padding-left: 8px;
+.hr-between{
+  margin: 10px 0px;
+}
+/* scrollbar styling */
+.sidebar-container::-webkit-scrollbar {
+  width: 8px;
+}
+.sidebar-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+.sidebar-container::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
 }

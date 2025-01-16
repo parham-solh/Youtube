@@ -17,10 +17,10 @@ li
 
 body {
   margin: 0;
-  padding: 150px 30px 0px 260px; /* Top, Right, Bottom, Left */
+  padding: 150px 30px 0px 245px; /* Top, Right, Bottom, Left */
 }
 hr {
   border-color: rgba(241, 241, 241, 0.281);
-  width: 210px;
-  margin: 13px 0px;
+  width: 200px;
+  margin: 0px;
 }
