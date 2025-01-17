@@ -7,6 +7,11 @@ body {
     box-sizing: border-box;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+
 a {
     color: rgb(0, 94, 255);
 }
@@ -84,8 +89,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70px;
-    height: 16px;
+    width: 95px;
+    height: 35px;
     line-height: 1.1;
     /* Adjust line-height to move text up */
     padding: 10px;
@@ -98,15 +103,12 @@ p {
     cursor: pointer;
     transition: background-color 0.1s;
 }
-
 .subscribe-button:hover {
     background-color: #242424;
 }
-
 .subscribe-button:active {
     transform: scale(0.95);
 }
-
 .subscribe-button:focus {
     background-color: #ddd;
     color: #0f0f0f;
@@ -116,7 +118,7 @@ p {
 .action-buttons {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 8px;
 }
 
 /* Single action button */
@@ -125,7 +127,9 @@ p {
     align-items: center;
     justify-content: center;
     background-color: #f1f1f1;
-    border: none;
+    border: none;   
+    width: auto;
+    height: 35px;
     padding: 8px 12px;
     border-radius: 20px;
     font-size: 14px;
@@ -140,19 +144,44 @@ p {
 /* like and dislike */
 .action.like
 {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    width: 80px;
     border-radius: 20px 0px 0px 20px; /* Top Left, Top Right, Bottom Right, Bottom Left */
     border-right: 1px solid rgb(205, 205, 205);
+}
+.action.like img
+{
+    display: block;
+    width: 65px;
+    transform: translate(-30%, -35%);
+}
+
+.count-text
+{
+    position: absolute;
+    top: 50%; /* Vertically centers the text */
+    left: 70%; /* Horizontally centers the text */
+    transform: translate(-50%, -50%); /* Adjusts for exact center */
+    font-size: 14px;
 }
 
 .action.dislike
 {
-    margin-right: 15px;
+    margin-right: 8px;
     border-radius: 0px 20px 20px 0px; /* Top Left, Top Right, Bottom Right, Bottom Left */
 }
-
-.divider
+.action.dislike img
 {
-    margin-left: 0;
+    margin-top: 5px;
+}
+
+.action.more .icon
+{
+    margin-right: 0;
+    padding: 0;
+    line-height: 0;
 }
 
 /* Icons and text inside each button */
