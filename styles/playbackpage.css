@@ -35,8 +35,15 @@ p {
 }
 
 .video-player iframe {
-    width: 1280px;
-    height: 720px;
+    width: 100%;
+    height: 700px;
+    max-width: 1280px;
+    max-height: 700px;
+    min-width: 320px; /* Or any minimum width you want */
+    min-height: 180px; /* Or any minimum height you want */
+    margin: 0 auto;
+    overflow: hidden; /* Prevents any content from overflowing */
+    box-sizing: border-box; /* Ensures padding doesn't break the layout */
     border-radius: 12px;
 }
 
