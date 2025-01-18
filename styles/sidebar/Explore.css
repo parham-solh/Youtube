@@ -15,7 +15,7 @@
   cursor: pointer;
   transition: background-color 0.1s;
   height: 40px;
-  width: 180px;
+  width: 183px;
 }
 .Explore-links:hover {
   background-color: rgb(243, 243, 243);

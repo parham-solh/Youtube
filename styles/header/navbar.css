@@ -1,9 +1,9 @@
 .navbar {
   display: flex;
-  height: 50px;
+  height: 58px;
   flex-direction: row;
   justify-content: space-between;
-  padding: 5px 16px;
+  padding: 0px 16px;
   position: fixed;
   background-color: rgb(255, 255, 255);
   top: 0;
@@ -11,6 +11,8 @@
   left: 0;
   z-index: 100;
 }
+
+/* left section */
 .left-section {
   width: 150px;
   display: flex;
@@ -23,7 +25,7 @@
   cursor: pointer;
 }
 .menu-btn:hover {
-  background-color: rgb(231, 231, 231);
+  background-color: rgb(235, 235, 235);
 }
 .menu-icon {
   display: flex;
@@ -36,11 +38,11 @@
 .middle-section {
   flex: 1;
   display: flex;
-  max-width: 700px;
+  max-width: 760px;
   align-items: center;
 }
-/* plus */
 
+/* middle section */
 .cointainer {
   flex: 1;
   display: flex;
@@ -54,45 +56,54 @@
   border: solid 1px rgb(197, 197, 197);
   align-items: center;
   border-radius: 60px;
-  padding: 0px 0px 0px 10px;
+  padding-left: 10px;
   box-shadow: inset 0px 0px 1px rgb(160, 160, 160);
+  margin-left: 40px;
 }
 .search-bar input {
   background: transparent;
   flex: 1;
   border: 0;
   outline: none;
-  padding: 10px;
+  padding: 0px 8px;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   color: rgba(27, 27, 27, 0.836);
   width: 0;
 }
 .serch-icon {
-  padding: 8px 20px;
+  padding: 7px 19px;
   border: none;
   border-left: solid 1px rgb(197, 197, 197);
   border-radius: 0px 20px 20px 0px;
   cursor: pointer;
   flex-shrink: 0;
+  background-color: rgb(247, 247, 247);
   transition: background-color 0.1s;
 }
+.serch-icon img {
+  background-color: rgb(247, 247, 247);
+}
 .serch-icon:hover {
-  background-color: rgb(231, 231, 231);
+  background-color: rgb(248, 248, 248);
 }
 .mic-icon {
-  height: 43px;
-  width: 43px;
+  width: 70px;
+}
+.mic-icon button {
+  height: 41px;
+  width: 41px;
   border: none;
   border-radius: 25px;
-  margin-left: 10px;
-  margin-right: 10px;
   cursor: pointer;
   transition: background-color 0.1s;
 }
-.mic-icon:hover {
+
+.mic-icon button:hover {
   background-color: rgb(230, 229, 229);
 }
+
+/* rigth section */
 .rigth-section {
   width: 200px;
   margin-right: 10px;
@@ -102,7 +113,7 @@
   flex-shrink: 0;
 }
 .plus-btn {
-  height: 33px;
+  height: 31px;
   width: 99px;
   background-color: rgb(241, 241, 241);
   display: flex;
@@ -159,7 +170,7 @@
 }
 .bell-btn:hover .tooltips,
 .serch-icon:hover .tooltips,
-.mic-icon:hover .tooltips {
+.mic-icon button:hover .tooltips {
   opacity: 1;
 }
 .tooltips {
@@ -176,4 +187,3 @@
   pointer-events: none;
   white-space: nowrap;
 }
-

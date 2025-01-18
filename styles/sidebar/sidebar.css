@@ -1,28 +1,29 @@
 .sidebar-container {
   position: fixed;
-  top: 60px;
+  top: 58px;
   left: 0;
   bottom: 0;
-  width: 225px;
+  width: 233px;
   padding-right: 5px;
   overflow-y: auto;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  scroll-behavior: ;
 }
 
 .section-section{
   padding: 12px;
-  width: 205px;
+  width: 216px;
 }
 
 .sidebar-links-home {
   padding: 0px 10px;
   height: 40px;
-  width: 180px;
+  width: 183px;
   display: flex;
   align-items: center;
   cursor: pointer;
-  background-color: rgb(243, 243, 243);
+  background-color: rgb(240, 240, 240);
   border-radius: 10px;
   transition: background-color 0.1s;
 }
@@ -41,7 +42,7 @@
   border-radius: 10px;
   padding: 0px 10px;
   height: 40px;
-  width: 180px;
+  width: 183px;
   align-items: center;
   cursor: pointer;
   transition: background-color 0.1s;
@@ -49,11 +50,11 @@
 .sidebar-links-A:hover,
 .sidebar-links:hover,
 .you-icon:hover {
-  background-color: rgb(243, 243, 243);
+  background-color: rgb(240, 240, 240);
 }
 
 .sidebar-links-home:hover {
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(233, 233, 233);
 }
 
 .sidebar-links-A div,
@@ -64,7 +65,7 @@
 }
 .you-icon {
   height: 40px;
-  width: 180px;
+  width: 183px;
   padding: 0px 10px;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 600;
@@ -94,4 +95,5 @@
 }
 .sidebar-container::-webkit-scrollbar-thumb:hover {
   background: #aaa;
+  opacity: 1;
 }

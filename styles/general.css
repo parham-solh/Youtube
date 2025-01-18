@@ -21,6 +21,6 @@ body {
 }
 hr {
   border-color: rgba(241, 241, 241, 0.281);
-  width: 200px;
+  width: auto;
   margin: 0px;
 }
