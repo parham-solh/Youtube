@@ -92,15 +92,9 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-<<<<<<<< HEAD:styles/header/playbackpage.css
-    width: 70px;
-    height: 16px;
-    line-height:1.1;
-========
     width: 95px;
     height: 35px;
     line-height: 1.1;
->>>>>>>> 731317481ab6a2235bec678c7482b8a835bb6658:styles/playback page/playbackpage.css
     /* Adjust line-height to move text up */
     padding: 10px;
     margin-left: 35px;
