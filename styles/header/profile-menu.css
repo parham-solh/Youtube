@@ -4,10 +4,13 @@
 }
 
 .profile-icon {
+  width: 40px;
+  /* padding: 0px 5px; */
   display: flex;
   cursor: pointer;
   position: relative;
   align-items: center;
+  justify-content: center;
 }
 
 .profile-pic {
