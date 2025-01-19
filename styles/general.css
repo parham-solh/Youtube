@@ -17,7 +17,8 @@ li
 
 body {
   margin: 0;
-  padding: 150px 30px 0px 265px; /* Top, Right, Bottom, Left */
+  margin: 150px 30px 0px 265px; 
+  /* Top, Right, Bottom, Left */
 }
 hr {
   border-color: rgba(241, 241, 241, 0.281);
