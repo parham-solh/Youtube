@@ -7,8 +7,13 @@
     align-items: center;
     z-index: 1;
     width: 390px;
+    margin-bottom: -2px;
 }
-
+@media (max-width: 1014px) {
+    .topic-bar-container {
+        width: auto;
+    }
+  }
 .topic-bar-container::before
 {
   content: '';

@@ -1,0 +1,23 @@
+/* description */
+.bottom-row {
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.views {
+    font-size: 0.85rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.05rem;
+    margin-bottom: 3px;
+}
+
+.description p,
+.description li,
+.contact p,
+.links li {
+    font-size: 0.9rem;
+    font-weight: 400;
+}

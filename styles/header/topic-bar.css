@@ -6,11 +6,11 @@
   height: 80px; /* distance to navbar */
   align-items: center;
   position: fixed;
+  right: 0;
+  left: 240px;
   top: 55px;
   z-index: 1;
   background-color: white;
-  right: 0;
-  left: 240px;
 }
 
 .topic-bar-container::before

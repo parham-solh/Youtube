@@ -1,11 +1,10 @@
 .comment-section {
     display: inline-block;
-    max-width: 800px;
+    width: auto;
     margin: 0 auto;
     background: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .comment {
@@ -13,7 +12,7 @@
     margin-bottom: 20px;
 }
 
-.avatar {
+.avatar img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
