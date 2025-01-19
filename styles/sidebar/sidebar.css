@@ -3,15 +3,16 @@
   top: 58px;
   left: 0;
   bottom: 0;
-  width: 233px;
-  padding-right: 5px;
+  width: 238px;
+  padding-right: 4px;
+  z-index: 1003;
   overflow-y: auto;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 .section-section{
-  padding: 12px;
+  padding: 12px 14px;
   width: 216px;
 }
 
