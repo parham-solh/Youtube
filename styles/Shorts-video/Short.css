@@ -1,6 +1,6 @@
 .Short-video-container {
   height: 545px;
-  margin: 30px 0px;
+  margin: 25px 0px 35px 0px;
 }
 
 .navbar-short-video {
@@ -19,7 +19,9 @@
 .navbar-short-video img {
   width: 25px;
 }
-
+.short-video-box {
+  cursor: pointer;
+}
 .navbar-short-video span {
   font-family: Arial, sans-serif;
   font-weight: 600;
@@ -48,15 +50,19 @@
   border-radius: 8px;
   margin-bottom: 3px;
 }
-.short_video-info {
-}
 .short-video-title {
   display: flex;
   align-items: start;
 }
 .short-video-title img {
   width: 23px;
-  margin: 8px 7px 0px 0px;
+  height: 23px;
+  padding: 5px;
+  border-radius: 50%;
+  margin: 2px 0px 0px 0px;
+}
+.short-video-title img:hover {
+  background: rgb(221, 221, 221);
 }
 .short-video-title span {
   margin-bottom: 4px;

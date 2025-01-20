@@ -1,3 +1,4 @@
+/* Hide scrollbar by default */
 .sidebar-container {
   position: fixed;
   top: 58px;
@@ -6,12 +7,26 @@
   width: 238px;
   padding-right: 4px;
   z-index: 1003;
-  overflow-y: auto;
   overflow-x: hidden;
+  overflow-y: auto;
   scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
-.section-section{
+.sidebar-container:hover {
+  scrollbar-width: auto
+
+}
+.sidebar-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.sidebar-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.section-section {
   padding: 12px 14px;
   width: 216px;
 }
@@ -82,11 +97,11 @@
 .you-icon img {
   margin-left: 8px;
 }
-.hr-between{
+.hr-between {
   margin: 10px 0px;
 }
 /* scrollbar styling */
-.sidebar-container::-webkit-scrollbar {
+/* .sidebar-container::-webkit-scrollbar {
   width: 8px;
 }
 .sidebar-container::-webkit-scrollbar-thumb {
@@ -95,5 +110,5 @@
 }
 .sidebar-container::-webkit-scrollbar-thumb:hover {
   background: #aaa;
-  opacity: 1;
-}
+  overflow-y: auto;
+} */
