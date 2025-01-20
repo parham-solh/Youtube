@@ -30,6 +30,7 @@
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.05rem;
+    cursor: pointer;
 }
 
 .subscribers {
@@ -44,11 +45,11 @@
     width: 95px;
     height: 35px;
     line-height: 1.1;
-    /* Adjust line-height to move text up */
     padding: 10px;
     margin-left: 35px;
     background-color: #0f0f0f;
     color: white;
+    border: none;
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 500;
@@ -65,12 +66,6 @@
     background-color: #ddd;
     color: #0f0f0f;
 }
-
-@media (max-width: 1014px) {
-    .subscribe-button {
-        margin: 0px 0 0 10px; /* top right bottom left */
-    }
-  }
 
 /* actions */
 .action-buttons {
@@ -103,35 +98,13 @@
 /* like and dislike */
 .action.like
 {
-    position: relative;
-    display: inline-block;
-    align-items: center;
-    width: 80px;
     border-radius: 20px 0px 0px 20px; /* Top Left, Top Right, Bottom Right, Bottom Left */
     border-right: 1px solid rgb(205, 205, 205);
-}
-.action.like img
-{
-    display: block;
-    width: 65px;
-    transform: translate(-30%, -35%);
-}
-.count-text
-{
-    position: absolute;
-    top: 50%; /* Vertically centers the text */
-    left: 70%; /* Horizontally centers the text */
-    transform: translate(-50%, -50%); /* Adjusts for exact center */
-    font-size: 14px;
 }
 .action.dislike
 {
     margin-right: 8px;
     border-radius: 0px 20px 20px 0px; /* Top Left, Top Right, Bottom Right, Bottom Left */
-}
-.action.dislike img
-{
-    margin-top: 5px;
 }
 .action.more .icon
 {
@@ -175,5 +148,8 @@
     .action.share
     {
         display: none;
+    }
+    .subscribe-button {
+        margin: 0 0 0 10px; /* top right bottom left */
     }
 }

@@ -1,9 +1,10 @@
 .comment-section {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     width: auto;
     margin: 0 auto;
     background: #fff;
-    padding: 20px;
     border-radius: 8px;
 }
 
@@ -12,11 +13,14 @@
     margin-bottom: 20px;
 }
 
+.avatar
+{
+    margin-right: 17px;
+}
 .avatar img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    margin-right: 15px;
     background-color: #ddd;
 }
 
@@ -26,26 +30,57 @@
 
 .username {
     font-weight: bold;
-    color: #333;
+    color: rgb(26, 26, 26);
     margin-bottom: 5px;
+    font-size: 0.8rem;
 }
 
-.text {
+.comment-text {
     margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: rgb(29, 29, 29);
 }
 
-.actions {
+.comment-action {
     display: flex;
     align-items: center;
     font-size: 0.9em;
-    color: #555;
+    gap: 13px;
 }
 
-.actions span {
-    margin-right: 20px;
+.button-like,
+.button-dislike,
+.button-reply
+{
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border: none;
+    background-color: white;
     cursor: pointer;
 }
 
-.actions span:hover {
-    text-decoration: underline;
+.button-reply
+{   
+    padding: 9px 12px;
+    border-radius: 15px;
+}
+
+.comment-icon
+{
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.comment-icon:hover,
+.button-reply:hover
+{
+    background-color: #ddd;
+}
+
+.comment-likes
+{
+    font-size: 0.8rem;
+    color: gray;
 }
