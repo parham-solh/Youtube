@@ -50,6 +50,7 @@
     align-items: center;
     font-size: 14px;
     padding: 7px 13px;
+    border: none;
     border-radius: 9px;
     background-color: #ececec;
     cursor: pointer;

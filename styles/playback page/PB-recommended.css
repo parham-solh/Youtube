@@ -12,26 +12,6 @@
     display: none;
 }
 
-/* Media Query for Medium Screens */
-@media (max-width: 1014px) {
-    .risponsived-recommended-section
-    {
-      display: block;
-      width: 100%;
-      padding-right: 6px;
-    }
-    .video-card h4,
-    .video-card-info,
-    .video-card
-    {
-        width: 100%;
-    }
-    .recommended-section
-    {
-        display: none;
-    }
-  }
-
 .video-card {
     display: flex;
     margin-bottom: 10px;
@@ -70,19 +50,48 @@
 
 .ellipsis
 {
-    height: 22px;
-    width: 44px;
-    text-align: center;
-    line-height: 0.45;
-    font-size: 13px;
-    margin-top: 3px;
-    padding: 3px 0;
+    cursor: pointer;;
+    height: 24px;
+    padding: 3px 7px;
     border-radius: 50%;
 }
+
+.ellipsis.custom
+{
+    margin-top: 12px;
+}
+
+.ellipsis img
+{
+    margin-right: 0;
+    height: 14px;
+    width: 12px;
+}
+
 .ellipsis:hover
 {
     background-color: #e0e0e0;
 }
+
+/* Risponsives */
+@media (max-width: 1014px) {
+    .risponsived-recommended-section
+    {
+      display: block;
+      width: 100%;
+      padding-right: 6px;
+    }
+    .video-card h4,
+    .video-card-info,
+    .video-card
+    {
+        width: 100%;
+    }
+    .recommended-section
+    {
+        display: none;
+    }
+  }
 @media (max-width: 1014px) {
     .ellipsis {
         width: 28px;
